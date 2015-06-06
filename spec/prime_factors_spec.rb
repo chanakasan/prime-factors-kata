@@ -7,15 +7,13 @@ describe PrimeFactors do
     it "returns an empty array for 1" do
       result = PrimeFactors.generate(1)
 
-      expect(result).to be_kind_of(Array)
-      expect(result.count).to eq(0)
+      expect(result).to eq([])
     end
 
     it "returns non-empty array for 2" do
       result = PrimeFactors.generate(2)
 
-      expect(result).to be_kind_of(Array)
-      expect(result.count).to eq(1)
+      expect(result).to eq([2])
     end
   end
 end

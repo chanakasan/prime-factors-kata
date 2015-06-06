@@ -15,5 +15,11 @@ describe PrimeFactors do
 
       expect(result).to eq([2])
     end
+
+    it "returns non-empty array for 3" do
+      result = PrimeFactors.generate(3)
+
+      expect(result).to eq([3])
+    end
   end
 end

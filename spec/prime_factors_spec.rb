@@ -27,5 +27,11 @@ describe PrimeFactors do
 
       expect(result).to eq([2,2])
     end
+
+    it "returns [2,3] for 6" do
+      result = PrimeFactors.generate(6)
+
+      expect(result).to eq([2,3])
+    end
   end
 end

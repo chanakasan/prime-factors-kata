@@ -1,3 +1,5 @@
+require_relative '../lib/prime_factors'
+
 describe PrimeFactors do
 
   context ".generate" do
@@ -6,7 +8,7 @@ describe PrimeFactors do
       result = PrimeFactors.generate(1)
 
       expect(result).to be_kind_of(Array)
-      expect(result.count).to eq(1)
+      expect(result.count).to eq(0)
     end
   end
 end

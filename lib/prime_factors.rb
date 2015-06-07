@@ -2,16 +2,15 @@ class PrimeFactors
 
   def self.generate(input)
     result = []
+    candidate = 2
 
-    if input > 1
-      while input % 2 === 0
-        result.push(2)
-        input = input / 2
+    while input > 1 do
+      while input % candidate == 0
+        result.push(candidate)
+        input = input / candidate
       end
 
-      if input > 1
-        result.push(input)
-      end
+      candidate += 1
     end
 
     result

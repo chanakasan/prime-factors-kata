@@ -1,19 +1,19 @@
 class PrimeFactors
 
-  def self.generate(input)
-    result = []
+  def self.generate(n)
+    primes = []
     candidate = 2
 
-    while input > 1 do
-      while input % candidate == 0
-        result.push(candidate)
-        input = input / candidate
+    while n > 1 do
+      while n % candidate == 0
+        primes.push(candidate)
+        n = n / candidate
       end
 
       candidate += 1
     end
 
-    result
+    primes
   end
 
 end

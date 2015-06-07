@@ -33,5 +33,11 @@ describe PrimeFactors do
 
       expect(result).to eq([2,3])
     end
+
+    it "returns [2,2,2] for 8" do
+      result = PrimeFactors.generate(8)
+
+      expect(result).to eq([2,2,2])
+    end
   end
 end

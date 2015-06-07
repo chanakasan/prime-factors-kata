@@ -4,7 +4,7 @@ class PrimeFactors
     result = []
 
     if input > 1
-      if input % 2 === 0
+      while input % 2 === 0
         result.push(2)
         input = input / 2
       end
